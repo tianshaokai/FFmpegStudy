@@ -11,7 +11,6 @@ add_library(ffmpeg_player SHARED
 #设置库目录，以下会用到
 set(LIBRARY_DIRS ${CMAKE_SOURCE_DIR}/src/main/jniLibs)
 
-message("JNILib: " STATUS ${LIBRARY_DIRS})
 
 # 包含头文件目录
 include_directories(../myplayer/src/main/cpp/include)
