@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.tianshaokai.myplayer.MyPlayer;
 
@@ -24,8 +25,11 @@ public class MainActivity extends AppCompatActivity {
         btnStart = findViewById(R.id.btnStart);
         btnStop = findViewById(R.id.btnStop);
 
+
+
         myPlayer = new MyPlayer();
         myPlayer.setResource("http://mpge.5nd.com/2015/2015-11-26/69708/1.mp3");
         myPlayer.prepare();
+        Toast.makeText(this, myPlayer.getffmpegInfo(), Toast.LENGTH_LONG).show();
     }
 }

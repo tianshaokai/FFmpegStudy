@@ -10,6 +10,8 @@ import android.text.TextUtils;
  */
 public class MyPlayer {
 
+    public native String getffmpegInfo();
+
     static {
         System.loadLibrary("ffmpeg_player");
         System.loadLibrary("avcodec");
@@ -43,4 +45,5 @@ public class MyPlayer {
 
 
     public native void n_prepared(String url);
+
 }

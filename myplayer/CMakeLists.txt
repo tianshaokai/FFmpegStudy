@@ -13,7 +13,7 @@ set(LIBRARY_DIRS ${CMAKE_SOURCE_DIR}/src/main/jniLibs)
 
 
 # 包含头文件目录
-include_directories(../myplayer/src/main/cpp/include)
+include_directories(src/main/cpp/include)
 
 #添加 libavcodec 的动态库
 add_library(avcodec SHARED IMPORTED )
