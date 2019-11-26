@@ -3,13 +3,14 @@ package com.tianshaokai.ffmpegstudy;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.TextView;
+import android.widget.Button;
 
 import com.tianshaokai.myplayer.MyPlayer;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tvStart;
+    private Button btnStart;
+    private Button btnStop;
 
 
     private MyPlayer myPlayer;
@@ -20,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tvStart = findViewById(R.id.tvStart);
+        btnStart = findViewById(R.id.btnStart);
+        btnStop = findViewById(R.id.btnStop);
 
         myPlayer = new MyPlayer();
         myPlayer.setResource("http://mpge.5nd.com/2015/2015-11-26/69708/1.mp3");
